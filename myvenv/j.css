@@ -1,0 +1,10 @@
+body {
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 300;
+}
+header ul li a:hover{
+    color: red;
+}
+header {
+    background-color: #040d22;
+}

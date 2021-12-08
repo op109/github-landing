@@ -1,0 +1,252 @@
+body {
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 300;
+    
+    
+}
+.nav-lk {
+    font-size: larger;
+    font-weight: 350;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.692);
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+header div ul li a:hover { 
+    color: orange;
+    font-weight: 500;
+  }
+header {
+    
+    position: relative;
+    
+}
+header .forms input.form-control {
+    color: white;
+    background-color: rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,.3);
+}
+header  .forms input.form-control::placeholder {
+    color: gray;
+}
+header [data-bs-toggle="offcanvas"] {
+    display: none;
+}
+header .offcanvas .list-group-item {
+    padding: 16px;
+}
+header .offcanvas .list-group-item a{
+    color: black;
+    text-decoration: none;
+}
+header .offcanvas .list-group-item a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+    header .logo {
+        flex-grow: 1;
+    }
+    header .nav,
+    header .forms input.form-control,
+    header .forms .btn-link {
+        display: none;
+    }
+    header [data-bs-toggle="offcanvas"] {
+        display: block;
+    }
+}
+
+
+section.msense {
+    background-color: #040d22;
+    position: relative;
+    overflow: hidden;
+}
+
+section.msense .container {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    position: relative;
+}
+
+section.msense .headline h1 {
+    font-size: 68px;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+section form input {
+    width: 100%;
+}
+section form div button {
+    width: 100%;
+}
+
+section.msense .headline h4 { 
+    font-size: 40px;
+}
+section.msense .headline p {
+    font-size: 20px;
+}
+section.msense img.math{
+    width: 900px;
+    position: absolute;
+    top: -5%;
+    left: 46%;
+}
+
+section.msense img.glow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+}
+section.msense .curve {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+section.youtube .container {
+    padding-top: 90px;
+    padding-bottom: 70px;
+    position: relative;
+}
+section.youtube img.shrimp {
+    width: 600px;
+    position: absolute;
+    top: -600px;
+    right: 50px;
+    opacity: 0.7;
+}
+
+
+section.youtube .ratio { 
+    border-radius: 10px;
+    overflow: hidden;   
+    background-color: black;
+}
+@media (max-width: 768px) {
+    section.youtube img.shrimp {
+        display: none;
+    }
+    
+}
+
+section.features .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section.features .card {
+    color: #627597;
+    border: none;
+}
+section.features .card img {
+    padding: 15px 30px;
+}
+@media (max-width: 576px) {
+    section.features .card img {
+        padding: 5px 15px;
+    }
+}
+section.paddlet .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #627597;
+}
+section.paddlet h1 {
+    font-size: 44px;
+    font-weight: 500;
+}   
+
+section.paddlet p {
+    font-size: 24px;
+}
+
+#paddlet {
+    background-color: black;
+    height: 500px;
+    border: ipx solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    z-index: 1;
+}
+section div iframe{
+    width: 856px;
+    height: 500px;
+}
+
+section.map .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #627597;
+}
+section.map h1 {
+    font-size: 44px;
+    font-weight: 500;
+}   
+
+section.map p {
+    font-size: 24px;
+}
+section
+
+
+#map {
+    background-color: black;
+    height: 500px;
+    border: ipx solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    z-index: 1;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+section.map div h1 {
+    font-size: 60px;
+    text-align: center;
+
+}
+
+section.map div.col-6 div.col-1 div.col-5 p{
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #040d22;
+    position: relative;
+    margin-top: 350px;
+}
+footer .curve {
+    transform: scale(1,-1);
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+footer img.illustration {
+    width: 100%;
+    margin-top: -33%;
+    margin-bottom: -20%;
+    transform: scale(-1,1)
+
+}
+footer div p {
+    color: white;
+    font-size: 30px;
+    opacity: .4;
+    margin-top: 200px;
+    vertical-align: middle;
+}
+footer div.col-10 p {
+    font-weight: 300;
+    text-align: center;
+    font-size: larger;
+    color: white;
+    vertical-align: middle;
+    margin-bottom: 80px;
+}

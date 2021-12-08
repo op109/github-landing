@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수학감각</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="./favicon.png">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap" rel="stylesheet">  
+
+    <!-- BOOTSTARP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./j.css">
+    
+        <script>
+            // Initialize Google Map.
+            function initMap() {
+              const myLatLng = {
+                lat: 37.480392,
+                lng: 126.542448
+              }
+              const map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                scrollwheel: false,
+                zoom: 17
+              })
+              const marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'GitHub'
+              })
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap" async defer></script>
+
+        
+</head>
+<body>
+    <!--ESENSE-->
+    <section class="msense">
+        <img class="math" src="./images/hero-globe.jpg" alt="math">
+        <img class="glow" src="./images/sea.jpg"alt="glow">
+        
+        <!--HEADER-->
+        <header>    
+            <div class="container d-flex align-items-center py-3">
+                <a class="logo me-2" href="#">
+                    <img src="./images/header-logo.svg" alt="Github Logo">
+                </a>
+                <ul class="nav flex-grow-1">
+                    <li class="nav-item">
+                        <a href="https://math.dulcine.net/video" class="nav-lk">동영상 강좌</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://math.dulcine.net/classroom" class="nav-lk">클래스룸</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.youtube.com/c/KihongChang1" class="nav-lk">왕새우TV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://smartstore.naver.com/dulcine" class="nav-lk">수학감각 구매</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://blog.naver.com/changkh" class="nav-lk">블로그</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://padlet.com/dulcine689/dulcine" class="nav-lk">패들렛</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://math.dulcine.net/story" class="nav-lk">교육이야기</a>
+                    </li>
+                </ul>
+                <div class="forms d-flex">
+                    <input type="text" class="form-control" placeholder="검색어를 입력하세요">
+                    <button class="btn btn-link text-light flex-shrink-0 me-2 text-decoration-none">Sign in</button>
+                    <button class="btn btn-outline-light flex-shrink-0">Sign up</button>
+                </div>
+                <button class="btn ms-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                    <img src="./images/menu.svg" alt="Menu Icon">
+                </button>
+                <div class="offcanvas offcanvas-end" id="offcanvas">
+                    <div class="offcanvas-header">
+                        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item">
+                                <a href="https://math.dulcine.net/video">동영상 강좌</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://math.dulcine.net/classroom">클래스룸</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://www.youtube.com/KihongChang1">왕새우TV</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://smartstore.naver.com/dulcine">수학감각 구매</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://blog.naver.com/changkh">블로그</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://padlet.com/dulcine689/dulcine">패들렛</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://math.dulcine.net/story">교육이야기</a>
+                            </li>
+                        </ul>
+                        <input type="text" class="form-control" placeholder="검색어를 입력하세요">
+                        <div class="d-grid mb-2">
+                            <button class="btn btn-outline-primary">Sign in</button>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary">수학감각 회원가입</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row"> 
+                <div class="col-lg-7 col-12">
+                    <div class="headline"> 
+                        <h1 class="text-white">수학을 느끼고 상상하라!</h1>
+                        <h4 class="text-white">아! 수학을 이렇게 배웠더라면...</h4><br>
+                        <p class="text-white-50">"배우는 사람 입장에서 자세하게 설명하니, 수학의 원리를 쉽게 깨닫게 됩니다."</p>
+                        <p class="text-white-50">"원래 이런 개념?? 처음 알게 되었어요."</p>
+                        <p class="text-white-50">"아이 스스로 풀고 싶어해요."</p>
+                        <p class="text-white-50">"풀면서 피식하며, 웃을 수 있는 강좌네요."</p>
+                        <p class="text-white-50">"듣다 보면 저절로 깨달아집니다."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-12">
+                    <form>
+                        <input type="text" class="form-coltrol form-control-lg mt-2 mb-3" placeholder="Email adreess"></input><br>
+                        <input type="password" class="form-coltrol form-control-lg mb-3" placeholder="Password"></input>
+                        <div class="d-gird">
+                            <button class="btn btn-primary btn-lg">수학감각 회원가입</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <img class="curve" src="./images/curve.svg" alt="Curve">
+    </section>
+    <!-- YOUTUBE -->
+    <section class="youtube">
+        <div class="container">
+            <img class="shrimp" src="./images/shrimp.png" alt="shrimp">
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/QAkZPwBWxT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features border-top border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-6">
+                        <div class="card">
+                            <img src="./images/01.jpg" alt="01" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><strong>분수교과서 보고 막막했는데...</strong></h5>
+                                <p class="card-text">수학감각을 보고 이책이다 싶었어요. 둘째는 수 세기부터 큰애는 곱셈부터 풀고 있는데 분수를 벼르고 벼르다 이제 구매했네요. 
+                                 곱셈 마무리되면 분수도 가르쳐 줄 생각입니다.</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="card">
+                        <img src="./images/math.jpg" alt="math" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><strong>그동안 알던 문제집과 다르네요.</strong></h5>
+                            <p class="card-text">이런식으로 접근하는 방법도있구나라는 것을 느낄수 있었어요.  당연하게 여기는 개념들의 어원,  뜻 부터 차근차근 설명해주셔서 참 좋네요. 
+                             아이와 함께 해보려고 열심히 수강중입니다.~ </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="card">
+                        <img src="./images/03.jpg" alt="" class="card-img-top">
+                        <div class="card-body text-center">
+                        <h5 class="card-title"><strong>개념이해에 이만한책 없는듯요.</strong></h5>
+                        <p class="card-text">개념이해하기에 강추해요. 책해보고 친구엄마들한테 추천했어요.
+                         저학년이라 엄마가 봐줘야하지만 책구성과 내용에 아주만족합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PADDLET -->
+    <section class="paddlet border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <h1>클래스룸에서 퀴즈를 즐겁게 풀고,  수업 영상도 보고</h1>
+                    <p>"선생님, 퀴즈가 정말 기발해요."</p>
+                    <p>"수학 싫어 했는데, 이 문제는 자꾸 풀고 싶어져요."</p>
+                    <p>"완전 엉뚱, 세상에.. 맙소사!"</p>
+                    <p>"저 100점 받았어요."</p>
+                    <p>"100점 받을 때까지 자꾸 노력하게 되네요."</p>
+                </div>
+                <div class="col-lg-8 col-12">
+                    <div id="paddlet" class="shadow">
+                        <iframe src="https://www.google.com/url?q=https%3A%2F%2Fpadlet.com%2Fdulcine689%2Fdulcine&sa=D&sntz=1&usg=AFQjCNE8Z19GTR9KaAiQkfACZFYVNKyNTw" title="YouTube video player" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MAP -->
+    <section class="map">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>오시는 길</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="map" class="shadow">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">  
+                    <p>
+                        <img class="mark" src="./images/mark.png" alt="mark"></img>
+                        인천광역시 중구 송산로 9
+                    </p>
+                </div>
+                <div class="col-6">
+                    <p>
+                    <img class="tel" src="./images/tel.png" alt="tel" width="50px"></img>
+                    010-6285-4382</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <img class="curve" src="./images/curve.svg" alt="Curve">
+        <div class="container">
+            <img class="illustration" src="./images/wave.png" alt="">
+            <div class="row">
+                <div class="col-2">
+                    <p>수학감각</p>
+                </div>
+                <div class="col-10">
+                    <p>Copyright - Dulcine.net &nbsp&nbsp|&nbsp&nbsp 대표자 장기홍&nbsp&nbsp|&nbsp&nbsp 도서출판 둘시네 &nbsp&nbsp|&nbsp&nbsp 010-6285-4382 &nbsp&nbsp|&nbsp&nbsp paul@dulcine.net </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
